@@ -1,0 +1,50 @@
+Modelo básico com as classes e alguns atributos
+
+
+Veiculo:
+ - classificacao(atual, pretendido, adquirido); String
+ - modelo; String
+ - marca; String
+ - cor; String
+ - ano; int
+ - acessorio[]; String
+
+ 
+Cliente(extends Pessoa):
+ - tipo(vendedor,comprador, vendedor/comprador); String
+
+Pessoa:
+ - nome; String
+ - cpf; String
+ - dataNasc; Date
+ - sexo; boolean
+ - Endereco; Endereco
+ - email[]; String
+ - telefone[]; String
+ 
+ 
+Endereco:
+ - tipo; String
+ - nome; String
+ - numero; int
+ - complemento; String
+ - bairro; String
+ - cep; String
+ - cidade; String
+ - estado; String
+ 
+ 
+Venda:
+ - data; Date
+ - valor; double
+ - Veiculo; Veiculo
+ - clienteVendedor; Cliente
+ - clienteComprador; Cliente
+ - funcionarioVendedor; Pessoa
+ 
+Funcionario(extends Pessoa):
+ - remuneracao; double
+ 
+ 
+ 
+ 
